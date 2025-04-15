@@ -1,0 +1,9 @@
+numpy>=1.22.0
+pandas>=1.4.0
+scikit-learn>=1.0.0
+joblib>=1.1.0
+rclpy>=0.13.0
+geometry_msgs>=4.2.0
+nav_msgs>=4.2.0
+sensor_msgs>=4.2.0
+tf2_msgs>=0.25.0
