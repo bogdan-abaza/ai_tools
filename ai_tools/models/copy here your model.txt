@@ -1,0 +1,2 @@
+1. Copy in this folder your traind model.joblib model. 
+2. Update the name of the model in ai_covariance_node by replacing the actual one which is "ai_covariance_model_full_v6.joblib"
