@@ -33,7 +33,7 @@ class AICovarianceNode(Node):
                 package_path = get_package_prefix('ai_tools')
                 # Navigate to the source directory (assuming workspace structure)
                 src_dir = package_path.replace('install/ai_tools', 'src/ai_tools')
-                model_path = os.path.join(src_dir, 'ai_tools', 'models', 'ai_covariance_model_full_v6.joblib')
+                model_path = os.path.join(src_dir, 'ai_tools', 'models', 'ai_covariance_model_full_v6.joblib') #model ai_covariance_model_full_v6.joblib is too large to be added
                 self.get_logger().info(f"Attempting to load model from: {model_path}")
                 if not os.path.exists(model_path):
                     raise FileNotFoundError(f"Model file does not exist at {model_path}")
