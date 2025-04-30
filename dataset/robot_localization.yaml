@@ -1,0 +1,33 @@
+ekf_node:
+  ros__parameters:
+    map_frame: 'map'
+    odom_frame: 'odom'
+    base_link_frame: 'base_link'
+    world_frame: 'odom'
+    publish_tf: True
+    publish_acceleration: false    
+    two_d_mode: True
+    use_sim_time: False
+    frequency: 20.0
+    transform_time_offset: 0.05
+    transform_timeout: 0.2
+
+    odom0: 'odom'
+    odom0_config: [False, False, False, False, False, False, True, True, False, False, False, True, False, False, False]
+    odom0_differential: False
+    odom0_nodelay: true
+    odom0_queue_size: 2
+    imu0: /bno055/imu_raw
+    imu0_config: [false, false, false,
+                  false, false, true,
+                  true, true, false,
+                  false, false, false]
+    imu0_remove_gravitational_acceleration: true
+    imu0_differential: False
+    imu0_nodelay: true    
+    imu0_relative: true
+    imu0_queue_size: 5
+    reset_on_time_jump: false
+    predict_to_current_time: false
+    print_diagnostics: true
+
